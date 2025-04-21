@@ -1,1 +1,1 @@
-# Proyecto-1-Dise-o-de-Sistemas-Digitales
+# Proyecto 1 Diseño de Sistemas Digitales
