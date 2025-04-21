@@ -1,12 +1,12 @@
 .data
-player1: .word 0         #posición del primer jugador 
-player2: .word 0         #posición del segundo jugador
-old_player1: .word 0     #posición anterior de la primera barra
-old_player2: .word 0     #posición anterior de la segunda barra
-ballx: .word 17          #posición inicial de la pelota 
-bally: .word 12          #posición inicial de la pelota 
-x_direction: .word 1     #dirección X de la pelota (1=derecha, -1=izquierda)
-y_direction: .word 1     #dirección Y de la pelota (1=abajo, -1=arriba)
+player1: .word 0            #posición del primer jugador 
+player2: .word 0            #posición del segundo jugador
+old_player1: .word 0        #posición anterior de la primera barra
+old_player2: .word 0        #posición anterior de la segunda barra
+ballx: .word 17             #posición inicial de la pelota 
+bally: .word 12             #posición inicial de la pelota 
+x_direction: .word 1        #dirección X de la pelota (1=derecha, -1=izquierda)
+y_direction: .word 1        #dirección Y de la pelota (1=abajo, -1=arriba)
 .text
 .globl main
 
@@ -54,7 +54,7 @@ li s10, 0
           
 #controles para el primer jugador
 lw t0, 0(s4)
-beqz t0, left_button   #si el botón izquierdo no está presionado comprueba el siguiente botón
+beqz t0, left_button       #si el botón izquierdo no está presionado comprueba el siguiente botón
 la t0, old_player1
 sw s3, 0(t0)              
 addi s3, s3, -1            #si el boton hacia arriba está presionado, mover hacia arriba 
