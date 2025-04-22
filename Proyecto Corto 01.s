@@ -1,12 +1,14 @@
 .data
-player1: .word 0            #posición del primer jugador 
-player2: .word 0            #posición del segundo jugador
-old_player1: .word 0        #posición anterior de la primera barra
-old_player2: .word 0        #posición anterior de la segunda barra
-ballx: .word 17             #posición inicial de la pelota 
-bally: .word 12             #posición inicial de la pelota 
-x_direction: .word 1        #dirección X de la pelota (1=derecha, -1=izquierda)
-y_direction: .word 1        #dirección Y de la pelota (1=abajo, -1=arriba)
+player1: .word 0         #posición del primer jugador 
+player2: .word 0         #posición del segundo jugador
+old_player1: .word 0     #posición anterior de la primera barra
+old_player2: .word 0     #posición anterior de la segunda barra
+ballx: .word 17          #posición inicial de la pelota 
+bally: .word 12          #posición inicial de la pelota 
+x_direction: .word 1     #dirección X de la pelota (1=derecha, -1=izquierda)
+y_direction: .word 1     #dirección Y de la pelota (1=abajo, -1=arriba)
+score_player1: .word 0   #puntuación del jugador 1 
+score_player2: .word 0   #puntuación del jugador 2 
 .text
 .globl main
 
@@ -45,6 +47,7 @@ lw a6, 0(t0)
 
 #Dibuja las barras de los jugadores y la pelota 
 jal ra, display_leds
+jal ra, score       
 li a7, 0xF14E96           
 jal ra, draw_ball
 
@@ -54,7 +57,7 @@ li s10, 0
           
 #controles para el primer jugador
 lw t0, 0(s4)
-beqz t0, left_button       #si el botón izquierdo no está presionado comprueba el siguiente botón
+beqz t0, left_button   #si el botón izquierdo no está presionado comprueba el siguiente botón
 la t0, old_player1
 sw s3, 0(t0)              
 addi s3, s3, -1            #si el boton hacia arriba está presionado, mover hacia arriba 
@@ -163,19 +166,29 @@ li a5, -1
 j game_walls
 
 player1_lost:
-li a3, 17         
+la t0, score_player2
+lw t1, 0(t0)         
+addi t1, t1, 1       
+sw t1, 0(t0)         
+jal ra, score 
+li a3, 17             
 li a4, 12             
 li a5, 1              
 j reset_game_delay
 
 player2_lost:
+la t0, score_player1
+lw t1, 0(t0)         
+addi t1, t1, 1    
+sw t1, 0(t0)      
+jal ra, score 
 li a3, 17             
 li a4, 12         
 li a5, -1             
 j reset_game_delay
 
 reset_game_delay:
-li t1, 70
+li t1, 50
 delay_after_reset:
 addi t1, t1, -1
 bnez t1, delay_after_reset
@@ -188,8 +201,9 @@ beq t1, s1, player2_lost
 add a3, a3, a5            
 
 add t1, a4, a6            
-bltz t1, move_ball_down       
-bge t1, s2, move_ball_up  
+bltz t1, move_ball_down 
+li t2, 25      
+bge t1, t2, move_ball_up  
 j update_ball_movement       
 
 move_ball_down:
@@ -281,4 +295,39 @@ add t0, t0, a3
 slli t0, t0, 2            
 add t0, t0, s0            
 sw a7, 0(t0)              
+ret
+
+score:
+addi s11, s11, 0
+sw ra, 0(s11)
+
+la t0, score_player1
+lw t1, 0(t0)      
+li t2, 26            
+li t3, 0xFBABF5  
+li t0, 0   
+jal ra, draw_score
+
+la t0, score_player2
+lw t1, 0(t0)         
+li t2, 27            
+li t3, 0xA3FDA8      
+li t0, 0
+jal ra, draw_score
+
+lw ra, 0(s11)
+addi s11, s11, 0
+  
+draw_score:
+blez t1, end  
+mul t4, t2, s1       
+add t4, t4, t0       
+slli t4, t4, 2       
+add t4, t4, s0       
+sw t3, 0(t4)         
+addi t0, t0, 1       
+addi t1, t1, -1      
+j draw_score
+    
+end:
 ret
