@@ -47,8 +47,9 @@ lw a6, 0(t0)
 
 #Dibuja las barras de los jugadores y la pelota 
 jal ra, display_leds
+jal ra, draw_division
 jal ra, score       
-li a7, 0xF14E96           
+li a7, 0xd81b60          
 jal ra, draw_ball
 
 main_loop:
@@ -153,16 +154,42 @@ player1_bar:
 sub t2, a4, s3         
 bltz t2, player1_lost  
 li t3, 3                  
-bge t2, t3, player1_lost  
-li a5, 1                  
+bge t2, t3, player1_lost             
+li a7, 0xf48fb1        
+jal ra, draw_ball         
+li t1, 1
+                 
+color_change1:
+addi t1, t1, -1
+bnez t1, color_change1
+mul t0, a4, s1            
+add t0, t0, a3            
+slli t0, t0, 2            
+add t0, t0, s0            
+sw zero, 0(t0)   
+li a5, 1         
+li a7, 0xd81b60          
 j game_walls
 
 player2_bar:
 sub t2, a4, s8            
 bltz t2, player2_lost     
 li t3, 3                  
-bge t2, t3, player2_lost  
-li a5, -1                 
+bge t2, t3, player2_lost       
+li a7, 0xf48fb1           
+jal ra, draw_ball         
+li t1, 1   
+          
+color_change2:
+addi t1, t1, -1
+bnez t1, color_change2
+mul t0, a4, s1            
+add t0, t0, a3            
+slli t0, t0, 2            
+add t0, t0, s0            
+sw zero, 0(t0)     
+li a5, -1       
+li a7, 0xd81b60           
 j game_walls
 
 player1_lost:
@@ -218,7 +245,7 @@ add a4, a4, a6
 j draw_ball_new_position
 
 draw_ball_new_position:
-li a7, 0xF14E96           
+li a7, 0xd81b60           
 jal ra, draw_ball
 la t0, ballx
 sw a3, 0(t0)              
@@ -242,7 +269,7 @@ sw zero, 280(t1)
 li t1, 140                
 mul t0, s3, t1            
 add t1, s0, t0            
-li t2, 0xFBABF5           
+li t2, 0xaf7ac5            
 sw t2, 0(t1)              
 sw t2, 140(t1)            
 sw t2, 280(t1)            
@@ -262,7 +289,7 @@ li t1, 140
 mul t0, s8, t1            
 add t1, s0, t0            
 addi t1, t1, 136          
-li t2, 0xA3FDA8           
+li t2, 0x16a085           
 sw t2, 0(t1)              
 sw t2, 140(t1)            
 sw t2, 280(t1)            
@@ -273,7 +300,7 @@ display_leds:
 li t1, 140                
 mul t0, s3, t1            
 add t1, s0, t0            
-li t2, 0xFBABF5           
+li t2, 0xaf7ac5            
 sw t2, 0(t1)              
 sw t2, 140(t1)            
 sw t2, 280(t1)            
@@ -283,10 +310,26 @@ li t1, 140
 mul t0, s8, t1            
 add t1, s0, t0            
 addi t1, t1, 136          
-li t2, 0xA3FDA8           
+li t2, 0x16a085           
 sw t2, 0(t1)              
 sw t2, 140(t1)            
 sw t2, 280(t1)            
+ret
+
+#División del juego y el marcador 
+draw_division:
+li t2, 0x1a5276
+li t3, 0
+li, t4, 25
+
+draw_division_loop:
+mul t5, t4, s1
+add t5, t5, t3
+slli t5, t5, 2
+add t5, t5, s0
+sw t2, 0(t5)
+addi t3, t3, 1
+blt t3, s1, draw_division_loop
 ret
 
 draw_ball:
@@ -304,14 +347,14 @@ sw ra, 0(s11)
 la t0, score_player1
 lw t1, 0(t0)      
 li t2, 26            
-li t3, 0xFBABF5  
+li t3, 0xaf7ac5   
 li t0, 0   
 jal ra, draw_score
 
 la t0, score_player2
 lw t1, 0(t0)         
 li t2, 27            
-li t3, 0xA3FDA8      
+li t3, 0x16a085      
 li t0, 0
 jal ra, draw_score
 
