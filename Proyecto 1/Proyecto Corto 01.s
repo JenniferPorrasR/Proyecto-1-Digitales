@@ -157,7 +157,7 @@ li t3, 3
 bge t2, t3, player1_lost             
 li a7, 0xf48fb1        
 jal ra, draw_ball         
-li t1, 1
+li t1, 10
                  
 color_change1:
 addi t1, t1, -1
@@ -178,7 +178,7 @@ li t3, 3
 bge t2, t3, player2_lost       
 li a7, 0xf48fb1           
 jal ra, draw_ball         
-li t1, 1   
+li t1, 10   
           
 color_change2:
 addi t1, t1, -1
