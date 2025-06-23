@@ -1,0 +1,1331 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.26+1 (git sha1 b1a011138, x86_64-w64-mingw32-g++ 9.2.1 -Os)
+
+
+-- Running command `read_verilog -sv ../design/adder.sv ../design/ALUcontrol.sv ../design/Control.sv ../design/DataMemory.sv ../design/ImmediateGenerator.sv ../design/InstructionMemory.sv ../design/Mux.sv ../design/PC.sv ../design/RegisterFile.sv ../design/RVALU.sv ../design/TOPSCP.sv ; synth_gowin -top TOPSCP -json SCP.json' --
+
+1. Executing Verilog-2005 frontend: ../design/adder.sv
+Parsing SystemVerilog input from `../design/adder.sv' to AST representation.
+Generating RTLIL representation for module `\adder'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: ../design/ALUcontrol.sv
+Parsing SystemVerilog input from `../design/ALUcontrol.sv' to AST representation.
+Generating RTLIL representation for module `\ALUControl'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: ../design/Control.sv
+Parsing SystemVerilog input from `../design/Control.sv' to AST representation.
+Generating RTLIL representation for module `\Control'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: ../design/DataMemory.sv
+Parsing SystemVerilog input from `../design/DataMemory.sv' to AST representation.
+Generating RTLIL representation for module `\DataMemory'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: ../design/ImmediateGenerator.sv
+Parsing SystemVerilog input from `../design/ImmediateGenerator.sv' to AST representation.
+Generating RTLIL representation for module `\ImmediateGenerator'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: ../design/InstructionMemory.sv
+Parsing SystemVerilog input from `../design/InstructionMemory.sv' to AST representation.
+Generating RTLIL representation for module `\InstructionMemoryF'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: ../design/Mux.sv
+Parsing SystemVerilog input from `../design/Mux.sv' to AST representation.
+Generating RTLIL representation for module `\Mux'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: ../design/PC.sv
+Parsing SystemVerilog input from `../design/PC.sv' to AST representation.
+Generating RTLIL representation for module `\PC'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: ../design/RegisterFile.sv
+Parsing SystemVerilog input from `../design/RegisterFile.sv' to AST representation.
+Generating RTLIL representation for module `\RegisterFile'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: ../design/RVALU.sv
+Parsing SystemVerilog input from `../design/RVALU.sv' to AST representation.
+Generating RTLIL representation for module `\RVALU'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: ../design/TOPSCP.sv
+Parsing SystemVerilog input from `../design/TOPSCP.sv' to AST representation.
+Generating RTLIL representation for module `\TOPSCP'.
+Successfully finished Verilog frontend.
+
+12. Executing SYNTH_GOWIN pass.
+
+12.1. Executing Verilog-2005 frontend: C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v
+Parsing Verilog input from `C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\LUT1'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\LUT3'.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\__APICULA_LUT5'.
+Generating RTLIL representation for module `\__APICULA_LUT6'.
+Generating RTLIL representation for module `\__APICULA_LUT7'.
+Generating RTLIL representation for module `\__APICULA_LUT8'.
+Generating RTLIL representation for module `\MUX2'.
+Generating RTLIL representation for module `\MUX2_LUT5'.
+Generating RTLIL representation for module `\MUX2_LUT6'.
+Generating RTLIL representation for module `\MUX2_LUT7'.
+Generating RTLIL representation for module `\MUX2_LUT8'.
+Generating RTLIL representation for module `\DFF'.
+Generating RTLIL representation for module `\DFFE'.
+Generating RTLIL representation for module `\DFFS'.
+Generating RTLIL representation for module `\DFFSE'.
+Generating RTLIL representation for module `\DFFR'.
+Generating RTLIL representation for module `\DFFRE'.
+Generating RTLIL representation for module `\DFFP'.
+Generating RTLIL representation for module `\DFFPE'.
+Generating RTLIL representation for module `\DFFC'.
+Generating RTLIL representation for module `\DFFCE'.
+Generating RTLIL representation for module `\DFFN'.
+Generating RTLIL representation for module `\DFFNE'.
+Generating RTLIL representation for module `\DFFNS'.
+Generating RTLIL representation for module `\DFFNSE'.
+Generating RTLIL representation for module `\DFFNR'.
+Generating RTLIL representation for module `\DFFNRE'.
+Generating RTLIL representation for module `\DFFNP'.
+Generating RTLIL representation for module `\DFFNPE'.
+Generating RTLIL representation for module `\DFFNC'.
+Generating RTLIL representation for module `\DFFNCE'.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\IBUF'.
+Generating RTLIL representation for module `\OBUF'.
+Generating RTLIL representation for module `\TBUF'.
+Generating RTLIL representation for module `\IOBUF'.
+Generating RTLIL representation for module `\TLVDS_OBUF'.
+Generating RTLIL representation for module `\ODDR'.
+Generating RTLIL representation for module `\ODDRC'.
+Generating RTLIL representation for module `\GSR'.
+Generating RTLIL representation for module `\ALU'.
+Generating RTLIL representation for module `\RAM16S1'.
+Generating RTLIL representation for module `\RAM16S2'.
+Generating RTLIL representation for module `\RAM16S4'.
+Generating RTLIL representation for module `\RAM16SDP1'.
+Generating RTLIL representation for module `\RAM16SDP2'.
+Generating RTLIL representation for module `\RAM16SDP4'.
+Generating RTLIL representation for module `\SP'.
+Generating RTLIL representation for module `\SPX9'.
+Generating RTLIL representation for module `\SDP'.
+Generating RTLIL representation for module `\SDPX9'.
+Generating RTLIL representation for module `\DP'.
+Generating RTLIL representation for module `\DPX9'.
+Generating RTLIL representation for module `\rPLL'.
+Generating RTLIL representation for module `\PLLVR'.
+Generating RTLIL representation for module `\OSC'.
+Generating RTLIL representation for module `\OSCZ'.
+Generating RTLIL representation for module `\OSCF'.
+Generating RTLIL representation for module `\OSCH'.
+Successfully finished Verilog frontend.
+
+12.2. Executing HIERARCHY pass (managing design hierarchy).
+
+12.2.1. Analyzing design hierarchy..
+Top module:  \TOPSCP
+Used module:     \Mux
+Used module:     \DataMemory
+Used module:     \RVALU
+Used module:     \ALUControl
+Used module:     \ImmediateGenerator
+Used module:     \RegisterFile
+Used module:     \Control
+Used module:     \InstructionMemoryF
+Used module:     \adder
+Used module:     \PC
+Parameter \WIDTH = 32
+
+12.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\Mux'.
+Parameter \WIDTH = 32
+Generating RTLIL representation for module `$paramod\Mux\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+Found cached RTLIL representation for module `$paramod\Mux\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+Found cached RTLIL representation for module `$paramod\Mux\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+Found cached RTLIL representation for module `$paramod\Mux\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+Parameter \DEPTH = 12
+
+12.2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\DataMemory'.
+Parameter \WIDTH = 32
+Parameter \DEPTH = 12
+Generating RTLIL representation for module `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory'.
+Parameter \WIDTH = 32
+
+12.2.4. Executing AST frontend in derive mode using pre-parsed AST for module `\RVALU'.
+Parameter \WIDTH = 32
+Generating RTLIL representation for module `$paramod\RVALU\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+Found cached RTLIL representation for module `$paramod\Mux\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+
+12.2.5. Executing AST frontend in derive mode using pre-parsed AST for module `\ImmediateGenerator'.
+Parameter \WIDTH = 32
+Generating RTLIL representation for module `$paramod\ImmediateGenerator\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+Parameter \ADDR_WIDTH = 5
+
+12.2.6. Executing AST frontend in derive mode using pre-parsed AST for module `\RegisterFile'.
+Parameter \WIDTH = 32
+Parameter \ADDR_WIDTH = 5
+Generating RTLIL representation for module `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile'.
+Parameter \WIDTH = 32
+Parameter \DEPTH = 64
+
+12.2.7. Executing AST frontend in derive mode using pre-parsed AST for module `\InstructionMemoryF'.
+Parameter \WIDTH = 32
+Parameter \DEPTH = 64
+Generating RTLIL representation for module `$paramod$00eb395828b7e8aa0250fb1626d85bad31a42b6b\InstructionMemoryF'.
+Parameter \WIDTH = 32
+
+12.2.8. Executing AST frontend in derive mode using pre-parsed AST for module `\adder'.
+Parameter \WIDTH = 32
+Generating RTLIL representation for module `$paramod\adder\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+Found cached RTLIL representation for module `$paramod\adder\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+Found cached RTLIL representation for module `$paramod\adder\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+
+12.2.9. Executing AST frontend in derive mode using pre-parsed AST for module `\PC'.
+Parameter \WIDTH = 32
+Generating RTLIL representation for module `$paramod\PC\WIDTH=s32'00000000000000000000000000100000'.
+
+12.2.10. Analyzing design hierarchy..
+Top module:  \TOPSCP
+Used module:     $paramod\Mux\WIDTH=s32'00000000000000000000000000100000
+Used module:     $paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory
+Used module:     $paramod\RVALU\WIDTH=s32'00000000000000000000000000100000
+Used module:     \ALUControl
+Used module:     $paramod\ImmediateGenerator\WIDTH=s32'00000000000000000000000000100000
+Used module:     $paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile
+Used module:     \Control
+Used module:     $paramod$00eb395828b7e8aa0250fb1626d85bad31a42b6b\InstructionMemoryF
+Used module:     $paramod\adder\WIDTH=s32'00000000000000000000000000100000
+Used module:     $paramod\PC\WIDTH=s32'00000000000000000000000000100000
+
+12.2.11. Analyzing design hierarchy..
+Top module:  \TOPSCP
+Used module:     $paramod\Mux\WIDTH=s32'00000000000000000000000000100000
+Used module:     $paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory
+Used module:     $paramod\RVALU\WIDTH=s32'00000000000000000000000000100000
+Used module:     \ALUControl
+Used module:     $paramod\ImmediateGenerator\WIDTH=s32'00000000000000000000000000100000
+Used module:     $paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile
+Used module:     \Control
+Used module:     $paramod$00eb395828b7e8aa0250fb1626d85bad31a42b6b\InstructionMemoryF
+Used module:     $paramod\adder\WIDTH=s32'00000000000000000000000000100000
+Used module:     $paramod\PC\WIDTH=s32'00000000000000000000000000100000
+Removing unused module `\RVALU'.
+Removing unused module `\RegisterFile'.
+Removing unused module `\PC'.
+Removing unused module `\Mux'.
+Removing unused module `\InstructionMemoryF'.
+Removing unused module `\ImmediateGenerator'.
+Removing unused module `\DataMemory'.
+Removing unused module `\adder'.
+Removed 8 unused modules.
+
+12.3. Executing PROC pass (convert processes to netlists).
+
+12.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\ALU.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$511'.
+Removing empty process `$paramod$00eb395828b7e8aa0250fb1626d85bad31a42b6b\InstructionMemoryF.$proc$../design/InstructionMemory.sv:0$826'.
+Cleaned up 1 empty switch.
+
+12.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$507 in module DFFNCE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$505 in module DFFNC.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$503 in module DFFNPE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$501 in module DFFNP.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$499 in module DFFNRE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$497 in module DFFNR.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$495 in module DFFNSE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$493 in module DFFNS.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$487 in module DFFCE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$485 in module DFFC.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$483 in module DFFPE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$481 in module DFFP.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$479 in module DFFRE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$477 in module DFFR.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$475 in module DFFSE.
+Marked 1 switch rules as full_case in process $proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$473 in module DFFS.
+Marked 1 switch rules as full_case in process $proc$../design/PC.sv:9$828 in module $paramod\PC\WIDTH=s32'00000000000000000000000000100000.
+Marked 2 switch rules as full_case in process $proc$../design/InstructionMemory.sv:0$820 in module $paramod$00eb395828b7e8aa0250fb1626d85bad31a42b6b\InstructionMemoryF.
+Marked 2 switch rules as full_case in process $proc$../design/RegisterFile.sv:16$735 in module $paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.
+Marked 1 switch rules as full_case in process $proc$../design/ImmediateGenerator.sv:0$701 in module $paramod\ImmediateGenerator\WIDTH=s32'00000000000000000000000000100000.
+Removed 1 dead cases from process $proc$../design/RVALU.sv:0$673 in module $paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.
+Marked 1 switch rules as full_case in process $proc$../design/RVALU.sv:0$673 in module $paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.
+Marked 5 switch rules as full_case in process $proc$../design/DataMemory.sv:0$669 in module $paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.
+Marked 4 switch rules as full_case in process $proc$../design/DataMemory.sv:52$580 in module $paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.
+Marked 3 switch rules as full_case in process $proc$../design/Control.sv:0$6 in module Control.
+Removed 3 dead cases from process $proc$../design/ALUcontrol.sv:0$2 in module ALUControl.
+Marked 7 switch rules as full_case in process $proc$../design/ALUcontrol.sv:0$2 in module ALUControl.
+Marked 1 switch rules as full_case in process $proc$../design/Mux.sv:0$555 in module $paramod\Mux\WIDTH=s32'00000000000000000000000000100000.
+Removed a total of 4 dead cases.
+
+12.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 9 redundant assignments.
+Promoted 105 assignments to connections.
+
+12.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\DFFNCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$508'.
+  Set init value: \Q = 1'0
+Found init rule in `\DFFNC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$506'.
+  Set init value: \Q = 1'0
+Found init rule in `\DFFNPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$504'.
+  Set init value: \Q = 1'1
+Found init rule in `\DFFNP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$502'.
+  Set init value: \Q = 1'1
+Found init rule in `\DFFNRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$500'.
+  Set init value: \Q = 1'0
+Found init rule in `\DFFNR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$498'.
+  Set init value: \Q = 1'0
+Found init rule in `\DFFNSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$496'.
+  Set init value: \Q = 1'1
+Found init rule in `\DFFNS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$494'.
+  Set init value: \Q = 1'1
+Found init rule in `\DFFNE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$492'.
+  Set init value: \Q = 1'0
+Found init rule in `\DFFN.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$490'.
+  Set init value: \Q = 1'0
+Found init rule in `\DFFCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$488'.
+  Set init value: \Q = 1'0
+Found init rule in `\DFFC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$486'.
+  Set init value: \Q = 1'0
+Found init rule in `\DFFPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$484'.
+  Set init value: \Q = 1'1
+Found init rule in `\DFFP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$482'.
+  Set init value: \Q = 1'1
+Found init rule in `\DFFRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$480'.
+  Set init value: \Q = 1'0
+Found init rule in `\DFFR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$478'.
+  Set init value: \Q = 1'0
+Found init rule in `\DFFSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$476'.
+  Set init value: \Q = 1'1
+Found init rule in `\DFFS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$474'.
+  Set init value: \Q = 1'1
+Found init rule in `\DFFE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$472'.
+  Set init value: \Q = 1'0
+Found init rule in `\DFF.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$470'.
+  Set init value: \Q = 1'0
+
+12.3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \CLEAR in `\DFFNCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$507'.
+Found async reset \CLEAR in `\DFFNC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$505'.
+Found async reset \PRESET in `\DFFNPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$503'.
+Found async reset \PRESET in `\DFFNP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$501'.
+Found async reset \CLEAR in `\DFFCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$487'.
+Found async reset \CLEAR in `\DFFC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$485'.
+Found async reset \PRESET in `\DFFPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$483'.
+Found async reset \PRESET in `\DFFP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$481'.
+Found async reset \rst in `$paramod\PC\WIDTH=s32'00000000000000000000000000100000.$proc$../design/PC.sv:9$828'.
+
+12.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~44 debug messages>
+
+12.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\ALU.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$511'.
+Creating decoders for process `\DFFNCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$508'.
+Creating decoders for process `\DFFNCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$507'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFNC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$506'.
+Creating decoders for process `\DFFNC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$505'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFNPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$504'.
+Creating decoders for process `\DFFNPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$503'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFNP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$502'.
+Creating decoders for process `\DFFNP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$501'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFNRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$500'.
+Creating decoders for process `\DFFNRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$499'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFNR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$498'.
+Creating decoders for process `\DFFNR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$497'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFNSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$496'.
+Creating decoders for process `\DFFNSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$495'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFNS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$494'.
+Creating decoders for process `\DFFNS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$493'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFNE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$492'.
+Creating decoders for process `\DFFNE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:381$491'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFN.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$490'.
+Creating decoders for process `\DFFN.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:366$489'.
+Creating decoders for process `\DFFCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$488'.
+Creating decoders for process `\DFFCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$487'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$486'.
+Creating decoders for process `\DFFC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$485'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$484'.
+Creating decoders for process `\DFFPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$483'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$482'.
+Creating decoders for process `\DFFP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$481'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$480'.
+Creating decoders for process `\DFFRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$479'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$478'.
+Creating decoders for process `\DFFR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$477'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$476'.
+Creating decoders for process `\DFFSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$475'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$474'.
+Creating decoders for process `\DFFS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$473'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFFE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$472'.
+Creating decoders for process `\DFFE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:194$471'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\DFF.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$470'.
+Creating decoders for process `\DFF.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:179$469'.
+Creating decoders for process `$paramod\PC\WIDTH=s32'00000000000000000000000000100000.$proc$../design/PC.sv:9$828'.
+     1/1: $0\PC_out[31:0]
+Creating decoders for process `$paramod$00eb395828b7e8aa0250fb1626d85bad31a42b6b\InstructionMemoryF.$proc$../design/InstructionMemory.sv:0$820'.
+     1/2: $2\instructionOut[31:0]
+     2/2: $1\instructionOut[31:0]
+Creating decoders for process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:0$813'.
+Creating decoders for process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+     1/39: $2$memwr$\Registers$../design/RegisterFile.sv:26$734_EN[31:0]$812
+     2/39: $2$memwr$\Registers$../design/RegisterFile.sv:26$734_DATA[31:0]$811
+     3/39: $2$memwr$\Registers$../design/RegisterFile.sv:26$734_ADDR[4:0]$810
+     4/39: $1$fordecl_block$134.i[31:0]$772
+     5/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$733_EN[31:0]$804
+     6/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$732_EN[31:0]$803
+     7/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$731_EN[31:0]$802
+     8/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$730_EN[31:0]$801
+     9/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$729_EN[31:0]$800
+    10/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$728_EN[31:0]$799
+    11/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$727_EN[31:0]$798
+    12/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$726_EN[31:0]$797
+    13/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$725_EN[31:0]$796
+    14/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$724_EN[31:0]$795
+    15/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$723_EN[31:0]$794
+    16/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$722_EN[31:0]$793
+    17/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$721_EN[31:0]$792
+    18/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$720_EN[31:0]$791
+    19/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$719_EN[31:0]$790
+    20/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$718_EN[31:0]$789
+    21/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$717_EN[31:0]$788
+    22/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$716_EN[31:0]$787
+    23/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$715_EN[31:0]$786
+    24/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$714_EN[31:0]$785
+    25/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$713_EN[31:0]$784
+    26/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$712_EN[31:0]$783
+    27/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$711_EN[31:0]$782
+    28/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$710_EN[31:0]$781
+    29/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$709_EN[31:0]$780
+    30/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$708_EN[31:0]$779
+    31/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$707_EN[31:0]$778
+    32/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$706_EN[31:0]$777
+    33/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$705_EN[31:0]$776
+    34/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$704_EN[31:0]$775
+    35/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$703_EN[31:0]$774
+    36/39: $1$memwr$\Registers$../design/RegisterFile.sv:20$702_EN[31:0]$773
+    37/39: $1$memwr$\Registers$../design/RegisterFile.sv:26$734_EN[31:0]$807
+    38/39: $1$memwr$\Registers$../design/RegisterFile.sv:26$734_DATA[31:0]$806
+    39/39: $1$memwr$\Registers$../design/RegisterFile.sv:26$734_ADDR[4:0]$805
+Creating decoders for process `$paramod\ImmediateGenerator\WIDTH=s32'00000000000000000000000000100000.$proc$../design/ImmediateGenerator.sv:0$701'.
+     1/1: $1\ImmExt[31:0]
+Creating decoders for process `$paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.$proc$../design/RVALU.sv:0$673'.
+     1/2: $1\ALUResult[31:0]
+     2/2: $1\Comparison[0:0]
+Creating decoders for process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:0$669'.
+     1/5: $5\ReadData[31:0]
+     2/5: $4\ReadData[31:0]
+     3/5: $3\ReadData[31:0]
+     4/5: $2\ReadData[31:0]
+     5/5: $1\ReadData[31:0]
+Creating decoders for process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+     1/60: $3$memwr$\DataMem$../design/DataMemory.sv:69$563_EN[7:0]$665
+     2/60: $3$memwr$\DataMem$../design/DataMemory.sv:69$563_DATA[7:0]$664
+     3/60: $3$memwr$\DataMem$../design/DataMemory.sv:69$563_ADDR[31:0]$663
+     4/60: $3$memwr$\DataMem$../design/DataMemory.sv:68$562_EN[7:0]$662
+     5/60: $3$memwr$\DataMem$../design/DataMemory.sv:68$562_DATA[7:0]$661
+     6/60: $3$memwr$\DataMem$../design/DataMemory.sv:68$562_ADDR[31:0]$660
+     7/60: $3$memwr$\DataMem$../design/DataMemory.sv:67$561_EN[7:0]$659
+     8/60: $3$memwr$\DataMem$../design/DataMemory.sv:67$561_DATA[7:0]$658
+     9/60: $3$memwr$\DataMem$../design/DataMemory.sv:67$561_ADDR[31:0]$657
+    10/60: $3$memwr$\DataMem$../design/DataMemory.sv:66$560_EN[7:0]$656
+    11/60: $3$memwr$\DataMem$../design/DataMemory.sv:66$560_DATA[7:0]$655
+    12/60: $3$memwr$\DataMem$../design/DataMemory.sv:66$560_ADDR[11:0]$654
+    13/60: $3$memwr$\DataMem$../design/DataMemory.sv:61$559_EN[7:0]$652
+    14/60: $3$memwr$\DataMem$../design/DataMemory.sv:61$559_DATA[7:0]$651
+    15/60: $3$memwr$\DataMem$../design/DataMemory.sv:61$559_ADDR[31:0]$650
+    16/60: $3$memwr$\DataMem$../design/DataMemory.sv:60$558_EN[7:0]$649
+    17/60: $3$memwr$\DataMem$../design/DataMemory.sv:60$558_DATA[7:0]$648
+    18/60: $3$memwr$\DataMem$../design/DataMemory.sv:60$558_ADDR[11:0]$647
+    19/60: $2$memwr$\DataMem$../design/DataMemory.sv:56$557_EN[7:0]$628
+    20/60: $2$memwr$\DataMem$../design/DataMemory.sv:56$557_DATA[7:0]$627
+    21/60: $2$memwr$\DataMem$../design/DataMemory.sv:56$557_ADDR[11:0]$626
+    22/60: $2$memwr$\DataMem$../design/DataMemory.sv:69$563_EN[7:0]$646
+    23/60: $2$memwr$\DataMem$../design/DataMemory.sv:69$563_DATA[7:0]$645
+    24/60: $2$memwr$\DataMem$../design/DataMemory.sv:69$563_ADDR[31:0]$644
+    25/60: $2$memwr$\DataMem$../design/DataMemory.sv:68$562_EN[7:0]$643
+    26/60: $2$memwr$\DataMem$../design/DataMemory.sv:68$562_DATA[7:0]$642
+    27/60: $2$memwr$\DataMem$../design/DataMemory.sv:68$562_ADDR[31:0]$641
+    28/60: $2$memwr$\DataMem$../design/DataMemory.sv:67$561_EN[7:0]$640
+    29/60: $2$memwr$\DataMem$../design/DataMemory.sv:67$561_DATA[7:0]$639
+    30/60: $2$memwr$\DataMem$../design/DataMemory.sv:67$561_ADDR[31:0]$638
+    31/60: $2$memwr$\DataMem$../design/DataMemory.sv:66$560_EN[7:0]$637
+    32/60: $2$memwr$\DataMem$../design/DataMemory.sv:66$560_DATA[7:0]$636
+    33/60: $2$memwr$\DataMem$../design/DataMemory.sv:66$560_ADDR[11:0]$635
+    34/60: $2$memwr$\DataMem$../design/DataMemory.sv:61$559_EN[7:0]$634
+    35/60: $2$memwr$\DataMem$../design/DataMemory.sv:61$559_DATA[7:0]$633
+    36/60: $2$memwr$\DataMem$../design/DataMemory.sv:61$559_ADDR[31:0]$632
+    37/60: $2$memwr$\DataMem$../design/DataMemory.sv:60$558_EN[7:0]$631
+    38/60: $2$memwr$\DataMem$../design/DataMemory.sv:60$558_DATA[7:0]$630
+    39/60: $2$memwr$\DataMem$../design/DataMemory.sv:60$558_ADDR[11:0]$629
+    40/60: $1$memwr$\DataMem$../design/DataMemory.sv:69$563_EN[7:0]$625
+    41/60: $1$memwr$\DataMem$../design/DataMemory.sv:69$563_DATA[7:0]$624
+    42/60: $1$memwr$\DataMem$../design/DataMemory.sv:69$563_ADDR[31:0]$623
+    43/60: $1$memwr$\DataMem$../design/DataMemory.sv:68$562_EN[7:0]$622
+    44/60: $1$memwr$\DataMem$../design/DataMemory.sv:68$562_DATA[7:0]$621
+    45/60: $1$memwr$\DataMem$../design/DataMemory.sv:68$562_ADDR[31:0]$620
+    46/60: $1$memwr$\DataMem$../design/DataMemory.sv:67$561_EN[7:0]$619
+    47/60: $1$memwr$\DataMem$../design/DataMemory.sv:67$561_DATA[7:0]$618
+    48/60: $1$memwr$\DataMem$../design/DataMemory.sv:67$561_ADDR[31:0]$617
+    49/60: $1$memwr$\DataMem$../design/DataMemory.sv:66$560_EN[7:0]$616
+    50/60: $1$memwr$\DataMem$../design/DataMemory.sv:66$560_DATA[7:0]$615
+    51/60: $1$memwr$\DataMem$../design/DataMemory.sv:66$560_ADDR[11:0]$614
+    52/60: $1$memwr$\DataMem$../design/DataMemory.sv:61$559_EN[7:0]$613
+    53/60: $1$memwr$\DataMem$../design/DataMemory.sv:61$559_DATA[7:0]$612
+    54/60: $1$memwr$\DataMem$../design/DataMemory.sv:61$559_ADDR[31:0]$611
+    55/60: $1$memwr$\DataMem$../design/DataMemory.sv:60$558_EN[7:0]$610
+    56/60: $1$memwr$\DataMem$../design/DataMemory.sv:60$558_DATA[7:0]$609
+    57/60: $1$memwr$\DataMem$../design/DataMemory.sv:60$558_ADDR[11:0]$608
+    58/60: $1$memwr$\DataMem$../design/DataMemory.sv:56$557_EN[7:0]$607
+    59/60: $1$memwr$\DataMem$../design/DataMemory.sv:56$557_DATA[7:0]$606
+    60/60: $1$memwr$\DataMem$../design/DataMemory.sv:56$557_ADDR[11:0]$605
+Creating decoders for process `\Control.$proc$../design/Control.sv:0$6'.
+     1/19: $3\one_byte[0:0]
+     2/19: $3\four_bytes[0:0]
+     3/19: $3\two_byte[0:0]
+     4/19: $2\unsigned_load[0:0]
+     5/19: $2\one_byte[0:0]
+     6/19: $2\four_bytes[0:0]
+     7/19: $2\two_byte[0:0]
+     8/19: $1\ALUOp[1:0]
+     9/19: $1\MemtoReg[0:0]
+    10/19: $1\ALUSrc[0:0]
+    11/19: $1\RegWrite[0:0]
+    12/19: $1\unsigned_load[0:0]
+    13/19: $1\four_bytes[0:0]
+    14/19: $1\two_byte[0:0]
+    15/19: $1\one_byte[0:0]
+    16/19: $1\Jump[0:0]
+    17/19: $1\Branch[0:0]
+    18/19: $1\MemWrite[0:0]
+    19/19: $1\MemRead[0:0]
+Creating decoders for process `\ALUControl.$proc$../design/ALUcontrol.sv:0$2'.
+     1/7: $7\ALUCtrl[3:0]
+     2/7: $6\ALUCtrl[3:0]
+     3/7: $5\ALUCtrl[3:0]
+     4/7: $4\ALUCtrl[3:0]
+     5/7: $3\ALUCtrl[3:0]
+     6/7: $2\ALUCtrl[3:0]
+     7/7: $1\ALUCtrl[3:0]
+Creating decoders for process `$paramod\Mux\WIDTH=s32'00000000000000000000000000100000.$proc$../design/Mux.sv:0$555'.
+     1/1: $1\out[31:0]
+
+12.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$00eb395828b7e8aa0250fb1626d85bad31a42b6b\InstructionMemoryF.\instructionOut' from process `$paramod$00eb395828b7e8aa0250fb1626d85bad31a42b6b\InstructionMemoryF.$proc$../design/InstructionMemory.sv:0$820'.
+No latch inferred for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.\ReadData1' from process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:0$813'.
+No latch inferred for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.\ReadData2' from process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:0$813'.
+No latch inferred for signal `$paramod\ImmediateGenerator\WIDTH=s32'00000000000000000000000000100000.\ImmExt' from process `$paramod\ImmediateGenerator\WIDTH=s32'00000000000000000000000000100000.$proc$../design/ImmediateGenerator.sv:0$701'.
+No latch inferred for signal `$paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.\ALUResult' from process `$paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.$proc$../design/RVALU.sv:0$673'.
+No latch inferred for signal `$paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.\Zero' from process `$paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.$proc$../design/RVALU.sv:0$673'.
+No latch inferred for signal `$paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.\Comparison' from process `$paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.$proc$../design/RVALU.sv:0$673'.
+No latch inferred for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.\ReadData' from process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:0$669'.
+No latch inferred for signal `\Control.\ALUOp' from process `\Control.$proc$../design/Control.sv:0$6'.
+No latch inferred for signal `\Control.\RegWrite' from process `\Control.$proc$../design/Control.sv:0$6'.
+No latch inferred for signal `\Control.\ALUSrc' from process `\Control.$proc$../design/Control.sv:0$6'.
+No latch inferred for signal `\Control.\MemRead' from process `\Control.$proc$../design/Control.sv:0$6'.
+No latch inferred for signal `\Control.\MemWrite' from process `\Control.$proc$../design/Control.sv:0$6'.
+No latch inferred for signal `\Control.\MemtoReg' from process `\Control.$proc$../design/Control.sv:0$6'.
+No latch inferred for signal `\Control.\Branch' from process `\Control.$proc$../design/Control.sv:0$6'.
+No latch inferred for signal `\Control.\Jump' from process `\Control.$proc$../design/Control.sv:0$6'.
+No latch inferred for signal `\Control.\one_byte' from process `\Control.$proc$../design/Control.sv:0$6'.
+No latch inferred for signal `\Control.\two_byte' from process `\Control.$proc$../design/Control.sv:0$6'.
+No latch inferred for signal `\Control.\four_bytes' from process `\Control.$proc$../design/Control.sv:0$6'.
+No latch inferred for signal `\Control.\unsigned_load' from process `\Control.$proc$../design/Control.sv:0$6'.
+No latch inferred for signal `\ALUControl.\ALUCtrl' from process `\ALUControl.$proc$../design/ALUcontrol.sv:0$2'.
+No latch inferred for signal `$paramod\Mux\WIDTH=s32'00000000000000000000000000100000.\out' from process `$paramod\Mux\WIDTH=s32'00000000000000000000000000100000.$proc$../design/Mux.sv:0$555'.
+
+12.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\ALU.\C' using process `\ALU.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$511'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\ALU.\S' using process `\ALU.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$511'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\DFFNCE.\Q' using process `\DFFNCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$507'.
+  created $adff cell `$procdff$1738' with negative edge clock and positive level reset.
+Creating register for signal `\DFFNC.\Q' using process `\DFFNC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$505'.
+  created $adff cell `$procdff$1739' with negative edge clock and positive level reset.
+Creating register for signal `\DFFNPE.\Q' using process `\DFFNPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$503'.
+  created $adff cell `$procdff$1740' with negative edge clock and positive level reset.
+Creating register for signal `\DFFNP.\Q' using process `\DFFNP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$501'.
+  created $adff cell `$procdff$1741' with negative edge clock and positive level reset.
+Creating register for signal `\DFFNRE.\Q' using process `\DFFNRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$499'.
+  created $dff cell `$procdff$1742' with negative edge clock.
+Creating register for signal `\DFFNR.\Q' using process `\DFFNR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$497'.
+  created $dff cell `$procdff$1743' with negative edge clock.
+Creating register for signal `\DFFNSE.\Q' using process `\DFFNSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$495'.
+  created $dff cell `$procdff$1744' with negative edge clock.
+Creating register for signal `\DFFNS.\Q' using process `\DFFNS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$493'.
+  created $dff cell `$procdff$1745' with negative edge clock.
+Creating register for signal `\DFFNE.\Q' using process `\DFFNE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:381$491'.
+  created $dff cell `$procdff$1746' with negative edge clock.
+Creating register for signal `\DFFN.\Q' using process `\DFFN.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:366$489'.
+  created $dff cell `$procdff$1747' with negative edge clock.
+Creating register for signal `\DFFCE.\Q' using process `\DFFCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$487'.
+  created $adff cell `$procdff$1748' with positive edge clock and positive level reset.
+Creating register for signal `\DFFC.\Q' using process `\DFFC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$485'.
+  created $adff cell `$procdff$1749' with positive edge clock and positive level reset.
+Creating register for signal `\DFFPE.\Q' using process `\DFFPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$483'.
+  created $adff cell `$procdff$1750' with positive edge clock and positive level reset.
+Creating register for signal `\DFFP.\Q' using process `\DFFP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$481'.
+  created $adff cell `$procdff$1751' with positive edge clock and positive level reset.
+Creating register for signal `\DFFRE.\Q' using process `\DFFRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$479'.
+  created $dff cell `$procdff$1752' with positive edge clock.
+Creating register for signal `\DFFR.\Q' using process `\DFFR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$477'.
+  created $dff cell `$procdff$1753' with positive edge clock.
+Creating register for signal `\DFFSE.\Q' using process `\DFFSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$475'.
+  created $dff cell `$procdff$1754' with positive edge clock.
+Creating register for signal `\DFFS.\Q' using process `\DFFS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$473'.
+  created $dff cell `$procdff$1755' with positive edge clock.
+Creating register for signal `\DFFE.\Q' using process `\DFFE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:194$471'.
+  created $dff cell `$procdff$1756' with positive edge clock.
+Creating register for signal `\DFF.\Q' using process `\DFF.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:179$469'.
+  created $dff cell `$procdff$1757' with positive edge clock.
+Creating register for signal `$paramod\PC\WIDTH=s32'00000000000000000000000000100000.\PC_out' using process `$paramod\PC\WIDTH=s32'00000000000000000000000000100000.$proc$../design/PC.sv:9$828'.
+  created $adff cell `$procdff$1758' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$fordecl_block$134.i' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1759' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$702_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1760' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$703_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1761' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$704_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1762' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$705_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1763' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$706_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1764' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$707_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1765' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$708_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1766' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$709_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1767' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$710_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1768' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$711_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1769' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$712_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1770' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$713_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1771' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$714_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1772' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$715_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1773' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$716_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1774' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$717_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1775' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$718_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1776' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$719_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1777' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$720_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1778' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$721_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1779' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$722_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1780' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$723_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1781' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$724_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1782' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$725_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1783' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$726_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1784' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$727_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1785' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$728_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1786' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$729_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1787' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$730_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1788' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$731_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1789' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$732_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1790' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:20$733_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1791' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:26$734_ADDR' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1792' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:26$734_DATA' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1793' with positive edge clock.
+Creating register for signal `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$memwr$\Registers$../design/RegisterFile.sv:26$734_EN' using process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+  created $dff cell `$procdff$1794' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:56$557_ADDR' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1795' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:56$557_DATA' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1796' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:56$557_EN' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1797' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:60$558_ADDR' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1798' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:60$558_DATA' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1799' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:60$558_EN' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1800' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:61$559_ADDR' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1801' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:61$559_DATA' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1802' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:61$559_EN' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1803' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:66$560_ADDR' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1804' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:66$560_DATA' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1805' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:66$560_EN' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1806' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:67$561_ADDR' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1807' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:67$561_DATA' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1808' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:67$561_EN' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1809' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:68$562_ADDR' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1810' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:68$562_DATA' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1811' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:68$562_EN' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1812' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:69$563_ADDR' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1813' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:69$563_DATA' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1814' with positive edge clock.
+Creating register for signal `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$memwr$\DataMem$../design/DataMemory.sv:69$563_EN' using process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+  created $dff cell `$procdff$1815' with positive edge clock.
+
+12.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+12.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `ALU.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:661$511'.
+Removing empty process `DFFNCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$508'.
+Found and cleaned up 1 empty switch in `\DFFNCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$507'.
+Removing empty process `DFFNCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:535$507'.
+Removing empty process `DFFNC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$506'.
+Removing empty process `DFFNC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:515$505'.
+Removing empty process `DFFNPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$504'.
+Found and cleaned up 1 empty switch in `\DFFNPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$503'.
+Removing empty process `DFFNPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:496$503'.
+Removing empty process `DFFNP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$502'.
+Removing empty process `DFFNP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:476$501'.
+Removing empty process `DFFNRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$500'.
+Found and cleaned up 2 empty switches in `\DFFNRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$499'.
+Removing empty process `DFFNRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:457$499'.
+Removing empty process `DFFNR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$498'.
+Found and cleaned up 1 empty switch in `\DFFNR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$497'.
+Removing empty process `DFFNR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:437$497'.
+Removing empty process `DFFNSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$496'.
+Found and cleaned up 2 empty switches in `\DFFNSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$495'.
+Removing empty process `DFFNSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:418$495'.
+Removing empty process `DFFNS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$494'.
+Found and cleaned up 1 empty switch in `\DFFNS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$493'.
+Removing empty process `DFFNS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:398$493'.
+Removing empty process `DFFNE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$492'.
+Found and cleaned up 1 empty switch in `\DFFNE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:381$491'.
+Removing empty process `DFFNE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:381$491'.
+Removing empty process `DFFN.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$490'.
+Removing empty process `DFFN.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:366$489'.
+Removing empty process `DFFCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$488'.
+Found and cleaned up 1 empty switch in `\DFFCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$487'.
+Removing empty process `DFFCE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:348$487'.
+Removing empty process `DFFC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$486'.
+Removing empty process `DFFC.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:328$485'.
+Removing empty process `DFFPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$484'.
+Found and cleaned up 1 empty switch in `\DFFPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$483'.
+Removing empty process `DFFPE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:309$483'.
+Removing empty process `DFFP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$482'.
+Removing empty process `DFFP.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:289$481'.
+Removing empty process `DFFRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$480'.
+Found and cleaned up 2 empty switches in `\DFFRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$479'.
+Removing empty process `DFFRE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:270$479'.
+Removing empty process `DFFR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$478'.
+Found and cleaned up 1 empty switch in `\DFFR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$477'.
+Removing empty process `DFFR.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:250$477'.
+Removing empty process `DFFSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$476'.
+Found and cleaned up 2 empty switches in `\DFFSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$475'.
+Removing empty process `DFFSE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:231$475'.
+Removing empty process `DFFS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$474'.
+Found and cleaned up 1 empty switch in `\DFFS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$473'.
+Removing empty process `DFFS.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:211$473'.
+Removing empty process `DFFE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$472'.
+Found and cleaned up 1 empty switch in `\DFFE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:194$471'.
+Removing empty process `DFFE.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:194$471'.
+Removing empty process `DFF.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:0$470'.
+Removing empty process `DFF.$proc$C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_sim.v:179$469'.
+Removing empty process `$paramod\PC\WIDTH=s32'00000000000000000000000000100000.$proc$../design/PC.sv:9$828'.
+Found and cleaned up 2 empty switches in `$paramod$00eb395828b7e8aa0250fb1626d85bad31a42b6b\InstructionMemoryF.$proc$../design/InstructionMemory.sv:0$820'.
+Removing empty process `$paramod$00eb395828b7e8aa0250fb1626d85bad31a42b6b\InstructionMemoryF.$proc$../design/InstructionMemory.sv:0$820'.
+Removing empty process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:0$813'.
+Found and cleaned up 2 empty switches in `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+Removing empty process `$paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.$proc$../design/RegisterFile.sv:16$735'.
+Found and cleaned up 1 empty switch in `$paramod\ImmediateGenerator\WIDTH=s32'00000000000000000000000000100000.$proc$../design/ImmediateGenerator.sv:0$701'.
+Removing empty process `$paramod\ImmediateGenerator\WIDTH=s32'00000000000000000000000000100000.$proc$../design/ImmediateGenerator.sv:0$701'.
+Found and cleaned up 1 empty switch in `$paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.$proc$../design/RVALU.sv:0$673'.
+Removing empty process `$paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.$proc$../design/RVALU.sv:0$673'.
+Found and cleaned up 5 empty switches in `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:0$669'.
+Removing empty process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:0$669'.
+Found and cleaned up 4 empty switches in `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+Removing empty process `$paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.$proc$../design/DataMemory.sv:52$580'.
+Found and cleaned up 3 empty switches in `\Control.$proc$../design/Control.sv:0$6'.
+Removing empty process `Control.$proc$../design/Control.sv:0$6'.
+Found and cleaned up 7 empty switches in `\ALUControl.$proc$../design/ALUcontrol.sv:0$2'.
+Removing empty process `ALUControl.$proc$../design/ALUcontrol.sv:0$2'.
+Found and cleaned up 1 empty switch in `$paramod\Mux\WIDTH=s32'00000000000000000000000000100000.$proc$../design/Mux.sv:0$555'.
+Removing empty process `$paramod\Mux\WIDTH=s32'00000000000000000000000000100000.$proc$../design/Mux.sv:0$555'.
+Cleaned up 44 empty switches.
+
+12.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+Optimizing module $paramod\PC\WIDTH=s32'00000000000000000000000000100000.
+Optimizing module $paramod\adder\WIDTH=s32'00000000000000000000000000100000.
+Optimizing module $paramod$00eb395828b7e8aa0250fb1626d85bad31a42b6b\InstructionMemoryF.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.
+<suppressed ~3 debug messages>
+Optimizing module $paramod\ImmediateGenerator\WIDTH=s32'00000000000000000000000000100000.
+Optimizing module $paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.
+<suppressed ~3 debug messages>
+Optimizing module $paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.
+Optimizing module Control.
+<suppressed ~4 debug messages>
+Optimizing module ALUControl.
+<suppressed ~4 debug messages>
+Optimizing module $paramod\Mux\WIDTH=s32'00000000000000000000000000100000.
+<suppressed ~1 debug messages>
+
+12.4. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\PC\WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod\adder\WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod$00eb395828b7e8aa0250fb1626d85bad31a42b6b\InstructionMemoryF.
+Deleting now unused module $paramod$d38378d0a61719707d0725f51c19df60e1888ecc\RegisterFile.
+Deleting now unused module $paramod\ImmediateGenerator\WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod\RVALU\WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod$c3ba9a85240f45743a7cc7d2ffd23d0699313e99\DataMemory.
+Deleting now unused module Control.
+Deleting now unused module ALUControl.
+Deleting now unused module $paramod\Mux\WIDTH=s32'00000000000000000000000000100000.
+<suppressed ~16 debug messages>
+
+12.5. Executing TRIBUF pass.
+
+12.6. Executing DEMINOUT pass (demote inout ports to input or output).
+
+12.7. Executing SYNTH pass.
+
+12.7.1. Executing PROC pass (convert processes to netlists).
+
+12.7.1.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+12.7.1.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+12.7.1.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+12.7.1.4. Executing PROC_INIT pass (extract init attributes).
+
+12.7.1.5. Executing PROC_ARST pass (detect async resets in processes).
+
+12.7.1.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+12.7.1.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+12.7.1.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+12.7.1.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+12.7.1.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+12.7.1.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+12.7.1.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+
+12.7.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+
+12.7.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+Removed 568 unused cells and 1001 unused wires.
+<suppressed ~677 debug messages>
+
+12.7.4. Executing CHECK pass (checking for obvious problems).
+Checking module TOPSCP...
+Found and reported 0 problems.
+
+12.7.5. Executing OPT pass (performing simple optimizations).
+
+12.7.5.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+
+12.7.5.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\TOPSCP'.
+Removed a total of 0 cells.
+
+12.7.5.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \TOPSCP..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+12.7.5.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \TOPSCP.
+Performed a total of 0 changes.
+
+12.7.5.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\TOPSCP'.
+Removed a total of 0 cells.
+
+12.7.5.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.7.5.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+
+12.7.5.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+
+12.7.5.9. Finished OPT passes. (There is nothing left to do.)
+
+12.7.6. Executing FSM pass (extract and optimize FSM).
+
+12.7.6.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+12.7.6.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+12.7.6.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+12.7.6.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+
+12.7.6.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+12.7.6.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+12.7.6.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+12.7.6.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+12.7.7. Executing OPT pass (performing simple optimizations).
+
+12.7.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+
+12.7.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\TOPSCP'.
+Removed a total of 0 cells.
+
+12.7.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \TOPSCP..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+12.7.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \TOPSCP.
+Performed a total of 0 changes.
+
+12.7.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\TOPSCP'.
+Removed a total of 0 cells.
+
+12.7.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.7.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+
+12.7.7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+
+12.7.7.9. Finished OPT passes. (There is nothing left to do.)
+
+12.7.8. Executing WREDUCE pass (reducing word size of cells).
+
+12.7.9. Executing PEEPOPT pass (run peephole optimizers).
+
+12.7.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+
+12.7.11. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module TOPSCP:
+  created 0 $alu and 0 $macc cells.
+
+12.7.12. Executing SHARE pass (SAT-based resource sharing).
+
+12.7.13. Executing OPT pass (performing simple optimizations).
+
+12.7.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+
+12.7.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\TOPSCP'.
+Removed a total of 0 cells.
+
+12.7.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \TOPSCP..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+12.7.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \TOPSCP.
+Performed a total of 0 changes.
+
+12.7.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\TOPSCP'.
+Removed a total of 0 cells.
+
+12.7.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.7.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+
+12.7.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+
+12.7.13.9. Finished OPT passes. (There is nothing left to do.)
+
+12.7.14. Executing MEMORY pass.
+
+12.7.14.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+12.7.14.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+12.7.14.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+12.7.14.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+12.7.14.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+12.7.14.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+
+12.7.14.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+12.7.14.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+12.7.14.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+
+12.7.14.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+12.7.15. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+
+12.8. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+
+12.9. Executing TECHMAP pass (map to technology primitives).
+
+12.9.1. Executing Verilog-2005 frontend: C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/lutrams_map.v
+Parsing Verilog input from `C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/lutrams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__GOWIN_LUTRAM_'.
+Successfully finished Verilog frontend.
+
+12.9.2. Executing Verilog-2005 frontend: C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/brams_map.v
+Parsing Verilog input from `C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/brams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__GOWIN_SP_'.
+Generating RTLIL representation for module `\$__GOWIN_DP_'.
+Generating RTLIL representation for module `\$__GOWIN_SDP_'.
+Successfully finished Verilog frontend.
+
+12.9.3. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+12.10. Executing OPT pass (performing simple optimizations).
+
+12.10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+<suppressed ~31 debug messages>
+
+12.10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\TOPSCP'.
+Removed a total of 0 cells.
+
+12.10.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.10.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+
+12.10.5. Finished fast OPT passes.
+
+12.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+12.12. Executing OPT pass (performing simple optimizations).
+
+12.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+
+12.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\TOPSCP'.
+Removed a total of 0 cells.
+
+12.12.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \TOPSCP..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+12.12.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \TOPSCP.
+Performed a total of 0 changes.
+
+12.12.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\TOPSCP'.
+Removed a total of 0 cells.
+
+12.12.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.12.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+
+12.12.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+
+12.12.9. Finished OPT passes. (There is nothing left to do.)
+
+12.13. Executing TECHMAP pass (map to technology primitives).
+
+12.13.1. Executing Verilog-2005 frontend: C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/techmap.v
+Parsing Verilog input from `C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+12.13.2. Executing Verilog-2005 frontend: C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v
+Parsing Verilog input from `C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_gw1n_alu'.
+Successfully finished Verilog frontend.
+
+12.13.3. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~73 debug messages>
+
+12.14. Executing OPT pass (performing simple optimizations).
+
+12.14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+
+12.14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\TOPSCP'.
+Removed a total of 0 cells.
+
+12.14.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+12.14.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+
+12.14.5. Finished fast OPT passes.
+
+12.15. Executing IOPADMAP pass (mapping inputs/outputs to IO-PAD cells).
+Mapping port TOPSCP.clk using IBUF.
+Mapping port TOPSCP.rst using IBUF.
+
+12.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \TOPSCP..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+12.17. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+12.18. Executing TECHMAP pass (map to technology primitives).
+
+12.18.1. Executing Verilog-2005 frontend: C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v
+Parsing Verilog input from `C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_SDFF_PP0_'.
+Generating RTLIL representation for module `\$_SDFF_NP0_'.
+Generating RTLIL representation for module `\$_SDFFE_PP0P_'.
+Generating RTLIL representation for module `\$_SDFFE_NP0P_'.
+Generating RTLIL representation for module `\$_SDFF_PP1_'.
+Generating RTLIL representation for module `\$_SDFF_NP1_'.
+Generating RTLIL representation for module `\$_SDFFE_PP1P_'.
+Generating RTLIL representation for module `\$_SDFFE_NP1P_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFFE_PP1P_'.
+Generating RTLIL representation for module `\$_DFFE_NP1P_'.
+Generating RTLIL representation for module `\$_DFFE_PP0P_'.
+Generating RTLIL representation for module `\$_DFFE_NP0P_'.
+Generating RTLIL representation for module `\$lut'.
+Successfully finished Verilog frontend.
+
+12.18.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~23 debug messages>
+
+12.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module TOPSCP.
+
+12.20. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+12.21. Executing ABC pass (technology mapping using ABC).
+
+12.21.1. Extracting gate netlist of module `\TOPSCP' to `<abc-temp-dir>/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+Removing temp directory.
+
+12.22. Executing TECHMAP pass (map to technology primitives).
+
+12.22.1. Executing Verilog-2005 frontend: C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v
+Parsing Verilog input from `C:\Users\esteb\DOWNLO~1\Logico\OSS-CA~1\bin\../share/yosys/gowin/cells_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_SDFF_PP0_'.
+Generating RTLIL representation for module `\$_SDFF_NP0_'.
+Generating RTLIL representation for module `\$_SDFFE_PP0P_'.
+Generating RTLIL representation for module `\$_SDFFE_NP0P_'.
+Generating RTLIL representation for module `\$_SDFF_PP1_'.
+Generating RTLIL representation for module `\$_SDFF_NP1_'.
+Generating RTLIL representation for module `\$_SDFFE_PP1P_'.
+Generating RTLIL representation for module `\$_SDFFE_NP1P_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFFE_PP1P_'.
+Generating RTLIL representation for module `\$_DFFE_NP1P_'.
+Generating RTLIL representation for module `\$_DFFE_PP0P_'.
+Generating RTLIL representation for module `\$_DFFE_NP0P_'.
+Generating RTLIL representation for module `\$lut'.
+Successfully finished Verilog frontend.
+
+12.22.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~23 debug messages>
+
+12.23. Executing OPT_LUT_INS pass (discard unused LUT inputs).
+Optimizing LUTs in TOPSCP.
+
+12.24. Executing SETUNDEF pass (replace undef values with defined constants).
+
+12.25. Executing HILOMAP pass (mapping to constant drivers).
+Removed 2 unused cells and 2 unused wires.
+
+12.26. Executing AUTONAME pass.
+Renamed 2 objects in module TOPSCP (2 iterations).
+<suppressed ~2 debug messages>
+
+12.27. Executing HIERARCHY pass (managing design hierarchy).
+
+12.27.1. Analyzing design hierarchy..
+Top module:  \TOPSCP
+
+12.27.2. Analyzing design hierarchy..
+Top module:  \TOPSCP
+Removed 0 unused modules.
+
+12.28. Printing statistics.
+
+=== TOPSCP ===
+
+   Number of wires:                 41
+   Number of wire bits:            729
+   Number of public wires:          41
+   Number of public wire bits:     729
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     IBUF                            2
+
+12.29. Executing CHECK pass (checking for obvious problems).
+Checking module TOPSCP...
+Found and reported 0 problems.
+
+12.30. Executing JSON backend.
+
+End of script. Logfile hash: ac5a7be8aa
+Yosys 0.26+1 (git sha1 b1a011138, x86_64-w64-mingw32-g++ 9.2.1 -Os)
+Time spent: 1% 20x read_verilog (0 sec), 1% 14x opt_expr (0 sec), ...
