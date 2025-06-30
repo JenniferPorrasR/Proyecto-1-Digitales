@@ -27,7 +27,7 @@ Para ejecutar correctamente el juego, es necesario utilizar el simulador Ripes, 
 2. Descargar la versión según el sistema operativo en la sección “Assets”.
 
 <p align="center">
-  <img src="./Imagenes/Imagen1.png" alt="Imagen 1" width="650" height="350">
+  <img src="./Imagenes/Imagen1.png" alt="Imagen 1" width="750" height="350">
 </p>
 
 ### Instalar o ejecutar Ripes
@@ -50,7 +50,7 @@ Para ejecutar correctamente el juego, es necesario utilizar el simulador Ripes, 
 El código está en el archivo `Proyecto Corto 01.s`, disponible en el repositorio: [Proyecto-1-Digitales](https://github.com/JenniferPorrasR/Proyecto-1-Digitales)
 
 <p align="center">
-  <img src="./Imagenes/Imagen2.png" alt="Imagen 2" width="650" height="350">
+  <img src="./Imagenes/Imagen2.png" alt="Imagen 2" width="750" height="350">
 </p>
 
 * Localizar el archivo `Proyecto Corto 01.s`.
@@ -63,19 +63,19 @@ El código está en el archivo `Proyecto Corto 01.s`, disponible en el repositor
 
 1. Abrir Ripes.
 <p align="center">
-  <img src="./Imagenes/Imagen4.png" alt="Imagen 4" width="650" height="350">
+  <img src="./Imagenes/Imagen4.png" alt="Imagen 4" width="750" height="350">
 </p>
 <p align="center">
-  <img src="./Imagenes/Imagen5.png" alt="Imagen 4" width="650" height="350">
+  <img src="./Imagenes/Imagen5.png" alt="Imagen 4" width="750" height="350">
 </p>
 2. En el menú superior, seleccionar `File` > `Load Program`.
 <p align="center">
-  <img src="./Imagenes/Imagen6.png" alt="Imagen 4" width="450" height="350">
+  <img src="./Imagenes/Imagen6.png" alt="Imagen 4" width="400" height="300">
 </p>
 3. Seleccione “Source File” y luego “Open”. Esto abrirá una ventana
 del explorador de archivos, donde deberá elegir el archivo `Proyecto Corto 01.s`.
 <p align="center">
-  <img src="./Imagenes/Imagen7.png" alt="Imagen 4" width="550" height="350">
+  <img src="./Imagenes/Imagen7.png" alt="Imagen 4" width="500" height="300">
 </p>
 
 **Nota:** Si aparece un error entre las líneas 16 y 22
