@@ -8,9 +8,9 @@
 
 ## Contenido
 
-1. [Descarga e instalación de Ripes](#descarga-e-instalacion-de-ripes)
-2. [Acceso al código fuente del juego](#acceso-al-codigo-fuente-del-juego)
-3. [Preparación para ejecutar el código en Ripes](#preparacion-para-ejecutar-el-codigo-en-ripes)
+1. [Descarga e instalación de Ripes](#descarga-e-instalación-de-ripes)
+2. [Acceso al código fuente del juego](#acceso-al-código-fuente-del-juego)
+3. [Preparación para ejecutar el código en Ripes](#preparación-para-ejecutar-el-código-en-ripes)
 4. [Cambios en Ripes](#cambios-en-ripes)
 5. [Instrucciones de juego](#instrucciones-de-juego)
 6. [Ejecutar el juego](#ejecutar-el-juego)
