@@ -25,7 +25,11 @@ Para ejecutar correctamente el juego, es necesario utilizar el simulador Ripes, 
 
 1. Acceder al repositorio de Ripes: [Ripes Releases](https://github.com/mortbopet/Ripes/releases)
 2. Descargar la versión según el sistema operativo en la sección “Assets”.
-(imagen)
+
+<p align="center">
+  <img src="./Imagenes/Imagen1.png" alt="Imagen 1" width="650" height="350">
+</p>
+
 ### Instalar o ejecutar Ripes
 
 * **Windows:** Extraer el archivo `.zip` y ejecutar `Ripes.exe`.
@@ -44,10 +48,13 @@ Para ejecutar correctamente el juego, es necesario utilizar el simulador Ripes, 
 ## Acceso al código fuente del juego
 
 El código está en el archivo `Proyecto Corto 01.s`, disponible en el repositorio: [Proyecto-1-Digitales](https://github.com/JenniferPorrasR/Proyecto-1-Digitales)
-(imagen)
+
+<p align="center">
+  <img src="./Imagenes/Imagen2.png" alt="Imagen 2" width="650" height="350">
+</p>
 
 * Localizar el archivo `Proyecto Corto 01.s`.
-(imagen)
+
 * Descargar usando el botón de descarga en la parte superior derecha.
 
 ---
@@ -55,18 +62,31 @@ El código está en el archivo `Proyecto Corto 01.s`, disponible en el repositor
 ## Preparación para ejecutar el código en Ripes
 
 1. Abrir Ripes.
-(imagen)
+<p align="center">
+  <img src="./Imagenes/Imagen4.png" alt="Imagen 4" width="650" height="350">
+</p>
+<p align="center">
+  <img src="./Imagenes/Imagen5.png" alt="Imagen 4" width="650" height="350">
+</p>
 2. En el menú superior, seleccionar `File` > `Load Program`.
-(imagen)
+<p align="center">
+  <img src="./Imagenes/Imagen6.png" alt="Imagen 4" width="450" height="350">
+</p>
 3. Seleccione “Source File” y luego “Open”. Esto abrirá una ventana
 del explorador de archivos, donde deberá elegir el archivo `Proyecto Corto 01.s`.
-(imagen)
+<p align="center">
+  <img src="./Imagenes/Imagen7.png" alt="Imagen 4" width="550" height="350">
+</p>
 
 **Nota:** Si aparece un error entre las líneas 16 y 22
-(imagen)
+<p align="center">
+  <img src="./Imagenes/Imagen10.png" alt="Imagen 4" width="550" height="200">
+</p>
  
  Cambiar el "Input type" de `Assembly` a `C`, aceptar, y volver a `Assembly`.
- (imagen)
+ <p align="center">
+  <img src="./Imagenes/Imagen11.png" alt="Imagen 4" width="450" height="50">
+</p>
 
 ---
 
@@ -76,33 +96,60 @@ Antes de ejecutar el juego, realizar los siguientes cambios:
 
 1. **Procesador:**
 
-   * En la barra lateral izquierda, buscar "Processor".
-   (imagen)
-   * En la barra superior, seleccionar el ícono del procesador.
-   (imagen)
-   * Elegir "Single Cycle RISC-V Processor" y aceptar.
-   (imagen)
+ * En la barra lateral izquierda, buscar "Processor".
 
-2. **Tiempo de Reloj:**
+<p align="center">
+  <img src="./Imagenes/Imagen12.png" alt="Imagen 4" width="50" height="250">
+</p>
+
+   * En la barra superior, seleccionar el ícono del procesador.
+
+<p align="center">
+  <img src="./Imagenes/Imagen13.png" alt="Imagen 4" width="450" height="50">
+</p>
+
+   * Elegir "Single Cycle RISC-V Processor" y aceptar.
+
+<p align="center">
+  <img src="./Imagenes/Imagen14.png" alt="Imagen 4" width="500" height="350">
+</p>
+
+1. **Tiempo de Reloj:**
 
    * En la barra superior, establecer el tiempo en `1 ms`.
-   (imagen)
 
-3. **Matriz de Leds:**
+<p align="center">
+  <img src="./Imagenes/Imagen15.png" alt="Imagen 4" width="450" height="50">
+</p>
 
-   * En la barra lateral izquierda, seleccionar el icono "I/O".
-   (imagen)
+2. **Matriz de Leds:**
+
+* En la barra lateral izquierda, seleccionar el icono "I/O".
+
+<p align="center">
+  <img src="./Imagenes/Imagen16.png" alt="Imagen 4" width="50" height="250">
+</p>
+
    * Elegir "LED Matrix".
-   (imagen)
+
+<p align="center">
+  <img src="./Imagenes/Imagen17.png" alt="Imagen 4" width="650" height="350">
+</p>
+
    * Cambiar la altura (`Height`) de `25` a `28`.
-   (imagen)
+
+<p align="center">
+  <img src="./Imagenes/Imagen18.png" alt="Imagen 4" width="650" height="350">
+</p>
 
 ---
 
 ## Instrucciones de juego
 
 Debe abrir el D-Pad para poder jugar.
-(imagen)
+<p align="center">
+  <img src="./Imagenes/Imagen19.png" alt="Imagen 4" width="550" height="350">
+</p>
 
 * **Jugador 1:**
 
@@ -119,7 +166,11 @@ Debe abrir el D-Pad para poder jugar.
 ## Ejecutar el juego
 
 Hacer clic en el botón de reproducción (play) en la barra superior. 
-(imagen)
+<p align="center">
+  <img src="./Imagenes/Imagen20.png" alt="Imagen 4" width="450" height="300">
+</p>
 Las dos últimas líneas de LEDs corresponden al marcador que suma puntos cuando la bola toca la pared del oponente.
-(imagen)
+<p align="center">
+  <img src="./Imagenes/Imagen21.png" alt="Imagen 4" width="450" height="300">
+</p>
 
