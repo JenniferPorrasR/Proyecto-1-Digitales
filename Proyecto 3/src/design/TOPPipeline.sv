@@ -67,6 +67,7 @@ module TOPPipeline #(parameter WIDTH=32, parameter DEPTH_IMEM=64, parameter DEPT
     assign Rs2 = instruction_ID[24:20];
     assign func7 = instruction_ID[31:25];
     
+    
     // Etapa IF - Instruction Fetch
     
     // Contador de programa
