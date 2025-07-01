@@ -36,6 +36,8 @@ Este proyecto implementa un procesador uniciclo basado en la arquitectura RISC-V
   <img src="./Imagenes/Imagen 1.png" alt="Imagen 2" width="750" height="450">
 </p>
 
+---
+
 ## Módulos Implementados y su Correspondencia en el Circuito
 
 ### `PC.sv`
@@ -77,6 +79,8 @@ Multiplexores que seleccionan entre diferentes fuentes de datos: operandos de la
 ### `addersv`
 
 Sumadores que calculan PC+4 para el flujo normal de instrucciones y PC + inmediato para saltos.
+
+---
 
 ## Reporte de Ejecución del Testbench 
 
