@@ -16,7 +16,7 @@ Este proyecto implementa un procesador uniciclo basado en la arquitectura RISC-V
 * Unidad de Control Principal
 * Generador de Inmediatos
 
-### 3. Executeion
+### 3. Execution
 
 * Unidad Aritmético-Lógica (ALU)
 * ALU control
